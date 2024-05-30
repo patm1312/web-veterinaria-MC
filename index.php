@@ -9,7 +9,7 @@ $_SESSION['seguridad_modificar'] = 'false';
 // Número de teléfono al que deseas enviar el mensaje por WhatsApp
 $numero = "+573107274921";
 // Mensaje que deseas enviar
-$mensaje = "Hoola, ¿cómo estás??";
+$mensaje = "Hola, ¿cómo estás??";
 
 // Codifica el número de teléfono y el mensaje para que sean seguros en un enlace
 $numero_codificado = rawurlencode($numero);
