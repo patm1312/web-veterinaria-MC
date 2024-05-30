@@ -1,0 +1,325 @@
+/* colores usados */
+:root {
+    --colorprimario: #6A6969;
+    --colorsecundario : #928A8A;
+    --colorterciario : #F9A81B;
+    --colorcuarto: #D28E18;
+    --colorquinto: #9f8e8e;
+    --colorseis:#322f2f;
+  }
+*{
+    list-style: none;
+    font-size: 25px;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+@font-face{
+    font-family: "normspro";
+    src: url("../fonts/TTNormsPro-Bold.ttf");
+    
+}
+@font-face {
+    font-family: "whyns";
+    src: url("../fonts/Whimsy.ttf");
+}
+@font-face {
+    font-family: "normsproregular";
+    src: url("../fonts/regular.ttf");
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main{
+    padding-top: 100px;
+}
+.h1{
+    font-family: "whyns", "normspro";
+    color: var(--colorcuarto);
+    font-size: 40px;
+}
+/* estilos del header */
+.header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f6e6e6;
+    box-shadow: 0px 2px 15px #e4d7d7f5;
+    z-index: 100;
+}
+
+.header__boxLogo, .nav, .header__boxCita, .header__boxLogin{
+    margin: 2px;
+    display: inline-block;
+}
+.header__container{
+    display: flex;
+    display: inline-block;
+}
+/* items del nav */
+.nav{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+}
+.nav__ul{
+    margin-top: auto;
+}
+.nav__item{
+    
+    font-size: 25px;
+    color: var(--colorprimario);
+}
+.nav__item--left{
+    margin-left: 10px;
+}
+.header__boxLogin{
+    display: inline-block;
+}
+.header__boxLogin--p{
+    font-size: 25px;
+    font-family: "normspro";
+    color: var(--colorprimario);
+}
+.header__boxLogin--img{
+    margin-bottom: -5px;
+}
+.nav__item, .header__boxLogin--img, .header__boxLogin--p{
+    display: inline-block;
+}
+
+/* logo */
+.header__boxLogo{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header__boxCita{
+    border-radius: 20px;
+    padding: 9px;
+    font-size: 25px;
+    background-color: var(--colorsecundario);
+    color: white;
+}
+/* estilos boton cita */
+.main__botonCita{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 100px;
+    bottom: 180px;
+    right: 20px;
+}
+/* footer */
+.footer__boxenlaces--h2, .footer__boxcontacto--h2, .footer__social--h2{
+    margin-bottom: 5px;
+}
+.footer__boxenlaces--h2, .footer__boxenlaces--a, .footer__boxcontacto--h2, .footer__social--h2, .footer__boxcontacto--p{
+
+    font-size: 25px;
+    color:(var(--colorprimario));
+}
+.footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f6e6e6;
+    box-shadow: 0px 2px 15px #e4d7d7f5
+}
+.footer__boxenlaces{
+    padding: 0;
+}
+.footer__boxenlaces--ul{
+    padding: 0;
+    list-style: none; 
+}
+.footer__boxenlaces--a, .footer__boxcontacto--p{
+    margin-left: 0px;
+    display: block;
+}
+.footer__social--img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* home */
+.canva{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.canva__group{
+    display: flex;
+}
+.canva__group--box{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.canva__img{
+    width: 50%;
+
+}
+.canva__h1{
+    font-family: "normspro";
+    font-size: 62px;
+    color: var(--colorprimario);
+    display: inline;
+}
+.canva__h1--span{
+    color: var(--colorterciario);
+    margin: 0;
+    padding: 0;
+}
+.canva__h1--span2{
+    color: var(--colorquinto);
+}
+.canva__p{
+    margin: 20px 0;
+}
+.canva__link {
+    padding: 11px;
+    width: 100%;
+    text-align: center;
+}
+/* seccion de vacunacion */
+.section__vacuna{
+    position: relative;
+    justify-content: space-around;
+    margin-top: 70px;
+    width:70%;
+    border-radius: 50px;
+    padding: 40px;
+    background: linear-gradient(to right, white, #fcf0d8);
+}
+.section__vacuna--h2{
+    font-size: 40px;
+    color: var(--colorseis);
+}
+.section__vacuna--img{
+    width: 40%;
+    object-fit: contain;
+}
+.section__vacuna--box{
+    width: 40%
+}
+.section__a--yellow{
+    width: 100%;
+    background-color: var(--colorcuarto);
+    text-align: center;
+    font-family: "normspro";
+    font-size: 20px;
+}
+.section__vacuna--img--pata{
+    position: absolute;
+    width: 10%;
+    top: 20px;
+    left: 40px;
+}
+/* seccion peluqueria */
+.section__vacuna--peluqueria{
+    background: linear-gradient(to right, white, #fbeded);
+}
+.header__boxCita--peluqueria {
+    background-color: var(--colorprimario);
+    color: white;
+}
+.section__vacuna--img--peluq{
+    width: 50%;
+}
+.section__vacuna--peluqueria{
+    position: relative;
+}
+.section__vacuna--img--sec{
+    position: absolute;
+    width: 10%;
+    top: 50px;
+    right: -10px;
+    transform: rotate(-35deg);
+}
+/* ubicacion google mapas */
+.ifrem{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ifrem--box{
+    display: flex;
+    justify-content: center;
+}
+.section__vacuna--h2-ifrem{
+    margin-bottom: 35px;
+}
+/* formulario */
+.section__form{
+    max-width: 400px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(to right, white, #ebe4ff);
+}
+.section__form__boximg{
+    display: flex;
+    justify-content: center;
+}
+.section__form--img{
+    width: 30%;
+}
+
+.small{
+    font-size: 15px;
+}
+.input{
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid #6A6969;
+}
+.block{
+    display: inline-block;
+}
+.section__form--p{
+    margin-left: 45px;
+}
+.input__2{
+    margin-bottom: 25px;
+}
+.form__bloque{
+    margin-top: 25px;
+}
+.header__boxCita__form{
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+.form__small{
+    font-size: 13px;
+    font-family: cursive;
+}
+.form__box3{
+    display: flex;
+    justify-content: flex-end;
+}
+.terminos{
+    color: var(--colorprimario);
+}

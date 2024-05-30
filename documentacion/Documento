@@ -1,0 +1,53 @@
+1. modal,  cuando se quiere redimensionar el  formulario del filtro, que pasa porque se va a eliminar el formulario y  se va a agregar  a otro lado dl dom,  en cuanto a los datos de formulario diligenciados por el usuario, solo cuando los marca y no los envia pero si redimensiona la ventaa del navegador...
+2. base de datos.
+   tabla usuarios: se le agrega la foto, el estado si esta ctivo, baneado o eliminado.
+3. la base de datos guarda los datos de los productos por categorias, categoria farmacia, de ropa y  accesorios/juguetes, de , alimento, cada uno de estos va a tener el stock, precio, detalles, la informacion la va a poder modificar el ususario administrador a travez de un formulario, depende de la categroia se va a modificar lieramente ese formulario para que gestione la informacion de los productos.
+4. la base de datos guarda los datos de todas las publicaciones de la pagina, se va a organizar por categorias, categoria Pservicio, padopta; iguamlemnte va a pode rmodificar esa informacion o gestionarla a travez de un formuloario que se muestra diferente segun la categoria.
+cada publicacion, va a tener un espacio en la pagina web, si solo esta en la la pagina de servicios, o  tambien va a aparecer en  el slider de el home(EN ESTE CASO SE REQUIERE UNA 	imagen de ciertas dimensiones.)
+todos los datos de la publicaciones son: 
+    id
+    titulo
+    descripcion
+    imagen
+    precio
+    descuento
+    categoria(Pservicio, Padopta),
+solo una publicacion de categoria Pservicio puede tener varias subpublicaciones con los siguientes datos(se guardan publicaciones de desparacitacon por ejemplo.):
+     titulo
+     subtitulo
+     parrrafo
+     imagen
+     id
+solo una publicacion de categoria Padopta puede tener varias subpublicaciones con los siguientes datos(se guardan publicaciones de las mascotas a adoptar por ejemplo.):
+     id
+     imagen varisa imagenes
+     raza
+     sexo
+     tallla
+     edad
+     esterilizado
+     especie
+     color
+3.5 
+4. vulnerabilidad url:
+   http://localhost/veterinaria/contenidos/login.php
+5. error usuario: danpezdavid1312@gmail.com contraseña.
+6.relacion de usuario-productos es de muchos a muchos.
+7. la tabla de productos debe tener un registro donde indiqe en que espacio de la pagina web va a aparecer el producto(slider y/o en el carrusel), lo mismo para la tabla serivicio, por ejejmplo una publicacion a cerca de desparzacitacion, puede aparecer en e l slider y/o en una publicaion masd detallada en pservicios.
+(si una publicacion tiene una imagen slider debe aparecer un diseño espcial.)
+8. probar: http://localhost/veterinaria/admin/index.php?seccion=AdminUsuarios
+9. ERRORES==> 
+    ==>cuando no hay pacientes registrado  en la pagina de admin, no aparece nada, ver usuario cuadno lbd d edatos esta vacia.
+    ==>areglar los enlaces de admin.
+    ==>algunos input no correpsonden a su funcion, mensajes de error o validacion de textos o numeros.
+    ==>
+    
+cuando  se crea un usuario se debe crear su plan de desparacitacion y vacunacion al paciente.
+
+cita(elige servicio)==>
+(crea la sesion de cita donde guarda)==>citauser(se debe identificar el ussuario con correo)==>validaremail(se valida el email y  se guarad en las sessioncita.,  aqui se envia el codigo  al correo==>citaemail(AQUI 	va  a pedir el codigo )==>codigoemail.php(aqui s evalida si le codigo es correcto delemail, y comprueba si exsten las sesione santeriores, para luego seguir pidiendo datos.)==>)
+fallo  alas citas, es decita acciones cir cuando un usuario pide una cita se le pide q ingrese correo, ete se validara, y  si se valida y existe la session que guarda informacion d la cita enviada en formularios anteriores puede continuar, pero la accion vunerable sucede cuando se crea la session  y  el ususario no sigue los passo, o  va a otra pagina  a  navegar, entonces la session va a quedar viva, y no se va a matar, esta sesion de cita deberia estar activa solo unos minutos ,
+
+
+==> formulario de agenda pocos pasos, la flecha de atras, debe dirigirse al formulario de escribir coreonueva mente para poder validarlo  otra vez, mostrar alerta al usuario que si retrocede, se le volveera a modificar y validar el correo
+
